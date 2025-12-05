@@ -140,7 +140,7 @@ details:nth-of-type(6) > summary { --sec:#64748B; }  /* Diagnostics */
       <tr>
         <th>Paracetamol 100mg/mL</th>
         <th>Paracetamol 125mg/5mL</th>
-        <th>Paracetamol 250mg/mL</th>
+        <th>Paracetamol 250mg/5mL</th>
         <th>Ibuprofen 200mg/5mL</th>
       </tr>
     </thead>
@@ -336,7 +336,7 @@ function calculate(){
   fillIf('bolusOut', `${(w*20).toFixed(0)} mL`);
 
   // Antipyretics
-  const pLo=10*w, pHi=20*w; fillIf('para100',(pLo/100).toFixed(2)+'–'+(pHi/100).toFixed(2)+' mL'); fillIf('para125',(pLo/25).toFixed(2)+'–'+(pHi/25).toFixed(2)+' mL'); fillIf('para250',(pLo/250).toFixed(2)+'–'+(pHi/250).toFixed(2)+' mL'); fillIf('ibu200',((10*w)/40).toFixed(2)+' mL');
+  const pLo=10*w, pHi=20*w; fillIf('para100',(pLo/100).toFixed(2)+'–'+(pHi/100).toFixed(2)+' mL'); fillIf('para125',(pLo/25).toFixed(2)+'–'+(pHi/25).toFixed(2)+' mL'); fillIf('para250',(pLo/50).toFixed(2)+'–'+(pHi/50).toFixed(2)+' mL'); fillIf('ibu200',((10*w)/40).toFixed(2)+' mL');
 
   // Antibiotics quick tables
   (function(){
